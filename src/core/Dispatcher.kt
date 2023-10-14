@@ -29,7 +29,9 @@ class Dispatcher private constructor(threadsCount: Int) {
     }
 
     companion object {
-        private val defaultDispatcher = create().withThreadsCount(30).build()
+        private val defaultDispatcher = create().withThreadsCount(
+            NoteefyConfig.DispatcherConfig.defaultThreadsCount
+        ).build()
         fun create() = OnGoingDispatcher()
         fun getDefaultDispatcher() = defaultDispatcher
 

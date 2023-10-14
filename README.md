@@ -1,3 +1,6 @@
+### ATTENTION
+- **THIS IS A TEST PROJECT, NOT RECOMMENDED TO USE**
+
 # Noteefy
 
 Noteefy is a highly customizable Kotlin pub/sub library that maintains event order. It consists of two main components: "Broadcaster" and "Broker." The library enables asynchronous event publishing and offers a dispatcher component to control the number of threads used for event processing. Users can create custom dispatchers and attach them to components, providing flexibility and control over the event handling process.
@@ -6,7 +9,7 @@ Noteefy is a highly customizable Kotlin pub/sub library that maintains event ord
 
 - **Broadcaster:** Publishes events to all registered subscribers.
 - **Broker:** Publishes events on specific topics and supports custom criteria for publishing set by subscribers during registration.
-- **Dispatcher:** Controls the total number of threads used for event publishing and processing.
+- **Dispatcher:** Controls the total number of threads used for event publishing and processing. Default dispatchers config can be set by `NoteefyConfig` file.
 - **Customization:** All library components can be overridden or extended to suit your needs.
 - **Notification Center:** Collects all notifications from the program, including error and log notifications.
 - **Logger Interface:** Users can choose between the default logger, which logs to the notification center, or use the log4j2 logger for customized logging.

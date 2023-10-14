@@ -1,10 +1,10 @@
 package kotlinTest
 
+import core.NoteefyConfig
 import kotlinTest.base.TestUtils
 import event.Event
 import event.EventHandler
 import notification.ExceptionNotification
-import notification.Notification
 import notification.NotificationCenter
 import notification.exception.NoSubscriberNoteefyException
 import publish.node.Broadcaster
@@ -83,6 +83,8 @@ class MessagingTests : TestUtils() {
 
     @Test
     fun `listeners should not block publishing process`() {
+        NoteefyConfig.DispatcherConfig.defaultThreadsCount = 3
+
         val blockingListener = Listener()
         val listener1 = Listener()
         val listener2 = Listener()
