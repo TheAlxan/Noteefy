@@ -6,16 +6,29 @@ create efficient and reliable event-driven systems.
 
 ## Table of Contents
 
-- [Installation](#installation)
+- [Download](#download)
 - [Milestones](#milestones)
 - [Components](#components)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
-## Installation
+## Download
 
-At the moment, there are no specific installation instructions available.
+### Maven
+```
+<dependency>
+    <groupId>io.github.thealxan</groupId>
+    <artifactId>Noteefy</artifactId>
+    <version>0.1</version>
+</dependency>
+```
+
+### Gradle
+```
+implementation group: 'io.github.thealxan', name: 'Noteefy', version: '0.1'
+```
+
 
 ## Milestones
 
